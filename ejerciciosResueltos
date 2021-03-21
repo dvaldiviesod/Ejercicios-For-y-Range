@@ -1,0 +1,53 @@
+# Ejercicio 1
+for x in range(10):
+    print(x)
+# Ejercicio 2
+for x in range(100, 200):
+    print(x)
+# Ejercicio 3
+for x in range(5, 21, 3):
+    print(x)
+# Ejercicio 4
+n = int(input("Ingrese un numero entero: "))
+for x in range(n, n * 2):
+    print(x)
+# Ejercicio 6
+f = input("Ingrese una frase: ")
+print("Las vocales de la frase son: ")
+for x in "aeiou":
+    if x in f:
+        print(x)
+# Ejercicio 7
+total = 0
+for x in range(101):
+    total = total + x
+print("La suma de los números entre 0 y 100 es: ", total)
+# Ejercicio 8
+anio1 = int(input("Digite el año inicial: "))
+anio2 = int(input("Digite el año final: "))
+print("Los años bisiestos y múltiplos de 10 en este rango de años son: ")
+for anio in range(anio1, anio2 + 1):
+    if not anio % 10 == 0:
+        continue
+    if not anio % 4 == 0:
+        continue
+    if anio % 100 != 0 or anio % 400 == 0:
+        print(anio)
+# Ejercicio 9
+n = int(input("Digite un número: "))
+f = 1
+if n != 0:
+    for x in range(1, n + 1):
+        f = f * x
+print("El factorial de", n, "es:", f)
+# Ejercicio 10
+print("los primeros 10 números de la sucesión de Fibonacci son: ")
+n1 = 0
+n2 = 1
+print(n1)
+print(n2)
+for x in range(9):
+    n3 = n1 + n2
+    print(n3)
+    n1 = n2
+    n2 = n3
